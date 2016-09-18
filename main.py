@@ -21,6 +21,7 @@ def ask_key():
     s.write('key')
 
 def authenticate():
+    s.flush()
     ask_key()
     key_recv = read_key().splitlines() 
     print key_recv
